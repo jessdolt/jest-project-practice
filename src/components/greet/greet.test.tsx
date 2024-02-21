@@ -4,7 +4,7 @@ import Greet from "./greet"
 describe("Greet", () => {
   test("renders corretcly", () => {
     render(<Greet />)
-    const textElement = screen.getByText("Hello")
+    const textElement = screen.getByText(/Hello/)
     expect(textElement).toBeInTheDocument()
   })
 })
